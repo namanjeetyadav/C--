@@ -4,7 +4,8 @@
 using namespace std;
 
 int sum(int a, int b);  //Forward declaration to tell complier about  
-
+// void g(void);
+void g();
 
 int main(){
     int num1, num2;
@@ -15,6 +16,7 @@ cin>>num2;
 
 cout<<"The sum is "<<sum(num1,num2);
 
+g();
 
 return 0;
 }
@@ -26,3 +28,6 @@ int sum(int a, int b){
 }
 
 
+void g(){
+    cout<<"\nHello Greetings";
+}
