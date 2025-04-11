@@ -10,8 +10,8 @@ class Complex
 public:
     void setData(int v1, int v2)
     {
-        a = v1;
-        b = v2;
+        a = v1; //Real part of number
+        b = v2; //Imaginary part of number
     }
 
     void setDataBySum(Complex o1, Complex o2)
@@ -33,6 +33,11 @@ int main()
 
     c2.setData(3,4);
     c2.printNumber();
+
+    c3.setDataBySum(c1,c2);
+    c3.printNumber();
+    
+
 
     return 0;
 
