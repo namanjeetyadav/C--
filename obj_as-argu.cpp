@@ -14,10 +14,10 @@ public:
         b = v2; //Imaginary part of number
     }
 
-    void setDataBySum(Complex o1, Complex o2)
+    void setDataBySum(Complex o1, Complex o2, Complex o4)
     {
-        a = o1.a + o2.a;
-        b = o1.b + o2.b;
+        a = o1.a + o2.a + o4.a;
+        b = o1.b + o2.b + o4.b;
     }
     void printNumber()
     {
@@ -27,14 +27,17 @@ public:
 
 int main()
 {
-    Complex c1, c2, c3;
+    Complex c1, c2, c3, c4;
     c1.setData(1,2);
     c1.printNumber();
 
     c2.setData(3,4);
     c2.printNumber();
 
-    c3.setDataBySum(c1,c2);
+    c4.setData(5,6);
+    c4.printNumber();
+
+    c3.setDataBySum(c1,c2,c4);
     c3.printNumber();
     
 
