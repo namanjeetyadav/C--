@@ -35,13 +35,14 @@ int main()
 {
 
     Complex c1, c2, sum;
-    c1.setNumber(4,3);
+
+    c1.setNumber(4, 3); // seting c1.a = 4 and c1.b =3
     c1.printNumber();
 
-    c2.setNumber(1,2);
+    c2.setNumber(1, 2); // seting c2.a = 1 and c2.b =2
     c2.printNumber();
 
-    sum = sumComplex(c1,c2);
+    sum = sumComplex(c1, c2);
     sum.printNumber();
     return 0;
 }
