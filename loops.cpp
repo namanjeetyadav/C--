@@ -16,3 +16,4 @@ int main(){
     } while (i<=10);
     
 }
+
